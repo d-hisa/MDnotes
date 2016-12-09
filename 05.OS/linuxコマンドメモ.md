@@ -67,6 +67,55 @@ $ grep hogehoge /etc/foo/var/*
 ```
 みたいにも使える。
 
+## zip / unzip
+### zip
+`$ zip [-rq / -e --password=HOGE] [ZIPPED_FILE_NAME.zip] [ZIPPING_DIR_PATH]`
+- r option: ディレクトリ内を再帰的に圧縮
+- q option: 実行履歴を表示しない
+- e option: パスワード付き書庫化。-`--password=HOGE`でパスワードを設定できる
+
+### unzip
+`unzip [EXTRACTING_FILE_PATH]`
+
+## crontab
+### usage
+```bash
+$ crontab [-uler]
+```
+- u: cronを実行するユーザを設定
+- l: 現在のcronに設定されているリストを表示
+- e: cronに登録する設定ファイルをvimで編集する
+- r: 現在のcronをすべて削除する
+
+### files
+#### cron
+`crontab -e`で編集するファイルは、通常ユーザを省いてよく、ユーザごとのcronとなる。  
+システム全体のcronを指定する場合は、
+- `/etc/crontab`
+- `/etc/cron.d`
+
+などに書く。sudoが必要
+#### log
+`/var/log/cron`
+
+## realpath
+相対パスを絶対パスにしてくれる。
+```bash
+$ cd ~/
+$ mkdir test
+$ cd test
+$ realpath ./
+/home/CURRENT_USER/test
+```
+
+## vmstat
+CPUの占有率とかを見れる。  
+詳細は[vmstatコマンド](http://www.fulldigit.net/content/view/54/6/)を見る。
+
+## iptables
+`iptables -nL`
+
+
 ## 環境変数にproxyを設定する
 profileにexportで指定する
 ```bash

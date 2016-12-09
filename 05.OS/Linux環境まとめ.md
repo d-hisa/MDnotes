@@ -15,3 +15,16 @@ alias COMMAND_NAME="COMMAND_ALIAS"
 ```
 + COMMAND_NAME：そのコマンドにつけたいalias名
 + COMMAND_ALIAS：そのコマンドの実態
+
+## SElinux
+```bash
+$ getenforce
+enforced
+$ setenforce 0	#disabled
+
+$ sudo vim /etc/selinux/config
+~
+#SElinux=enforced
+SElinux=disabled
+~
+```

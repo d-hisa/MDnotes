@@ -1,2 +1,0 @@
-# MDnotes
-Utility Tips MDs.

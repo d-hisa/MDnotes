@@ -28,6 +28,3 @@ set fileencodings=cp932,sjis,utf-8
 set term=xterm-256color
 set syntax
 ```
-## Vimでテキストを暗号化する
-暗号化前のテキストを開き、`:X PASSWPRD`として、`:wq`すると暗号化される。  
-暗号化を解除するにはファイルを開いた状態で`:X`とするだけ。
