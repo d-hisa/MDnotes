@@ -67,6 +67,13 @@ $ grep hogehoge /etc/foo/var/*
 ```
 みたいにも使える。
 
+`grep -rnw foo * -e hoge -e test -e bar`
+
+### options
+- `-n`:行番号を表示する
+- `-r`:リカーシヴ。サブディレクトリ内も検索する
+- `-w`:検索が完全一致になる
+
 ## zip / unzip
 ### zip
 `$ zip [-rq / -e --password=HOGE] [ZIPPED_FILE_NAME.zip] [ZIPPING_DIR_PATH]`
