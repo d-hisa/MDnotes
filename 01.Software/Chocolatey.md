@@ -12,6 +12,12 @@ Win版のyum、homebrew、apt-get的なものらしい。Pwoershellでインス�
 
 はすべて同義だとか。あとは`choco list`でインストール可能なパッケージを一覧したり、`choco update all`でパッケージの一括アプデ、`choco install / uninstall`でパッケージの追加/削除が可能。
 
+## Tips
+Chocolateyは管理者権限がないと弾かれるので、ターミナル（今回はCmder）に常に管理者権限を付与する。
+- \*.exe本体を右クリック
+- 互換性
+- 管理者として実行にチェックを入れる
+
 ## Recommend package
 ### Hain
 Alfredライクなランチャ。開発死んでるExecutorと違って絶賛Pre中のようす。  

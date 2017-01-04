@@ -67,6 +67,13 @@ $ grep hogehoge /etc/foo/var/*
 ```
 みたいにも使える。
 
+`grep -rnw foo * -e hoge -e test -e bar`
+
+### options
+- `-n`:行番号を表示する
+- `-r`:リカーシヴ。サブディレクトリ内も検索する
+- `-w`:検索が完全一致になる
+
 ## zip / unzip
 ### zip
 `$ zip [-rq / -e --password=HOGE] [ZIPPED_FILE_NAME.zip] [ZIPPING_DIR_PATH]`
@@ -115,6 +122,14 @@ CPUの占有率とかを見れる。
 ## iptables
 `iptables -nL`
 
+## useradd
+```bash
+$ useradd -c "COMMENT" -g INIT_GROPU_NAME -G ADDED_GROPU_NAME -m USER_NAME
+```
+- `-c`: `/etc/passwd`にコメントがつく
+- `-g`: イニシャルのグループ
+- `-G`: 追加の所属グループ
+- `-m`: ユーザディレクトリを自動的に生成
 
 ## 環境変数にproxyを設定する
 profileにexportで指定する
