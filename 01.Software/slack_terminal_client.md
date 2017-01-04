@@ -22,14 +22,11 @@ npm -g config set registry http://registry.npmjs.org
 
 ### SlackのAPItokenを払い出して環境変数へ（Mac編）
 ログイン後、[Slack Web API | Slack](https://api.slack.com/web)より、tokenを払い出す。
-```bash
-xoxp-46838777971-46898837735-121027395204-d78ae2b71d6cab56ed82e74453783dbd
-```
 tokenを`bash_profile`へ
 ```bash
 # 追記
 $ vim ~/.bash_profile
-[export SLACK_TOKEN="払い出したslackのtest token"]
+[export SLACK_TOKEN="払い出したslackのtoken"]
 $ source ~/.bash_profile
 ```
 
