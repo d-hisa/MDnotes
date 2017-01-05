@@ -131,6 +131,14 @@ $ useradd -c "COMMENT" -g INIT_GROPU_NAME -G ADDED_GROPU_NAME -m USER_NAME
 - `-G`: 追加の所属グループ
 - `-m`: ユーザディレクトリを自動的に生成
 
+## tail
+```bash
+$ tail [-n LINE_NUM] [-f] [file_path_1] [file_path_2] ...
+```
+### options
+- `n LINE_NUM`:LINE_NUMに任意の行数を指定することで、ファイル末尾の任意の行分を表示できる
+- `f`:リアルタイム出力。logなどを見るときにつかう。`Ctrl + c`で止める。
+
 ## 環境変数にproxyを設定する
 profileにexportで指定する
 ```bash
