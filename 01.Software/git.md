@@ -33,5 +33,10 @@ bin/
 # パッケージフォルダ内の .ts ファイルは要らない
 package/**/*.ts
 ```
+### .gitignoreするまえにaddしてしまったら
+```bash
+$ git rm --cached -f foo.html~
+```
+
 ### Reference
 - [.gitignore の書き方 - Qiita](http://qiita.com/inabe49/items/16ee3d9d1ce68daa9fff)
