@@ -139,6 +139,23 @@ $ tail [-n LINE_NUM] [-f] [file_path_1] [file_path_2] ...
 - `n LINE_NUM`:LINE_NUMに任意の行数を指定することで、ファイル末尾の任意の行分を表示できる
 - `f`:リアルタイム出力。logなどを見るときにつかう。`Ctrl + c`で止める。
 
+## curl
+### options
+- `x`:proxy setting
+### proxyを設定する
+#### ラインから設定
+```bash
+$ curl -x PROXY_HOST:PORT_NUM FQDN
+```
+#### 設定ファイルに設定
+`~/.curlrc`に設定する
+```bash
+$ touch ~/.curlrc
+$ echo 'proxy-user = "USER_NAME:PASSWORD"' >> ~/.curlrc
+$ echo 'proxy = "PROXY_HOST:PORT_NUM"' >> ~/.curlrc
+$ source ~/.curlrc
+```
+
 ## 環境変数にproxyを設定する
 profileにexportで指定する
 ```bash
