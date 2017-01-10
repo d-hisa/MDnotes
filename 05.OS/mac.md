@@ -9,3 +9,11 @@ mdファイルをクイックルックできるアプリ。
 ```bash
 $ brew cask install qlmarkdown
 ```
+
+##iTerm2
+### Shortcuts
+- `cmd + k`:clear screen
+- `cmd + Enter`:Switch full screen
+- `cmd + -`:font size small
+- `cmd + shift + ;`:font size big
+-
