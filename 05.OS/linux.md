@@ -1,57 +1,31 @@
-# Linux Command Cheet sheet
-[TOC]
-## source
+# Linux設定関係まとめ
+## Convenient Settings
+### Alias
+コマンドをショートカットできるAlias。
+`~/.bashrc`か`~/.bash_profile`に書き込む。  
+それぞれログイン時に読み込まれるが、bash_profileはそのユーザにログインしたとき、bashrcはそのコンソールが起動されたときに読み込まれるものらしい。  
+基本的にはbash_profileに環境変数を、bashrcにaliasを書くのが推奨されているとか。  
+sshに限って言えば、`.ssh/config`内に書くほうがエレガント。  
+記法は以下のとおり。
 ```bash
-$ source hoge
+$ vim ~/.bashrc
+
+[.bashrc]
+alias COMMAND_NAME="COMMAND_ALIAS"
 ```
-hogeの中のコマンドを実行する。  
-たとえば`~/.hogehoge`を変更したとき、ログイン時に読み込まれるがそれは面倒なので
-`source ~/hogehoge`すると即実行されて便利。
++ COMMAND_NAME：そのコマンドにつけたいalias名
++ COMMAND_ALIAS：そのコマンドの実態
 
-## yum
-### yum clean all
-yumのキャッシュを削除。
-### yum -list
-yumのオプションリストを出してくれる
-### yum list installed
-yumでインストールされたパッケージ一覧が出る。
-
-### yum repolist [all/enabled/disabled] [REPO_NAME] [-v]
-#### all/enabled/disabled
-+ `all`:全て見る
-+ `enabled`:有効なものだけ。デフォルト（オプション無指定）はこれ
-+ `disabled`:無効なものだけ
-
-#### REPO_NAME
-特定のリポジトリだけ見る。
-#### -v
-詳細に見る。ただし長いのでREPO_NAME指定したほうが良い。
-### yumのリポジトリの場所
-`/etc/yum.repos.d/`
-### yum リポジトリの有効無効
-.repoファイル内の`enabled`の0/1で管理。
-
-### yum --enablerepo=FOO --disablerepo=VAR [install/update/repolist etc.]
-yumのリポジトリを一時的に有効／無効にするオプション。  
-正式なリポジトリの名前は`yum repolist`で調べておく。  
-ただし詳細な名前は長く面倒なものが多いので、ワイルドカードを使うと便利。  
-**Ex.**
+## SElinux
 ```bash
-$ yum --enablerepo=CentOS-* install HOGE
-```
-また、先に書いたほうが先に動作するので、
-```bash
-$ yum --disablerepo=* --enablerepo=FOO,VAR install HOGEHOGE
-```
-のように一度全部disableしてから特定のリポジトリをenableするようなやり方も可能（らしい）。
-### yum 全体にプロキシを通す
-`/etc/yum.conf`に以下を書き込む  
-`http_proxy=http://172.20.253.21:8080`  
-ただしこれはスマートではなく、proxy内のリポジトリを見に行くことができなくなる
-### yumリポジトリにproxyを個別設定する
-`/etc/yum.repos.d`以下にあるリポジトリファイル内に、
-```bash
-[foo package]
+$ getenforce
+enforced
+$ setenforce 0	#disabled
+
+$ sudo vim /etc/selinux/config
+~
+#SElinux=enforced
+SElinux=disabled
 ~
 proxy=hogehogehoge
 ```
