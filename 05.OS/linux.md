@@ -1,5 +1,41 @@
 # Linux Environments and Commands
 ## Environments
+### ssh
+#### .ssh/config
+```bash
+[~/.ssh/config]
+# Iterative Hello ping
+ServerAliveInterval 60
+# Tunnell(Humidai)
+Host humidai
+        HostName HUMIDAI_DOMAIN
+        User USER_NAME
+        Port 22
+        IdentityFile PRIVATE_KEY_PATH
+        ForwardAgent yes	# default set "ssh -A" option
+```
+#### ssh-agent
+WindowsだとPageantがやってくれるエージェントフォワード。  
+秘密鍵を途中のサーバにも持っていってくれる。
+```bash
+# unix
+$ ssh-agent
+# Windows
+$ eval "$(ssh-agent)"
+
+$ ssh-add PRIVATE_KEY_PATH
+```
+としておけば、`ssh -A hogehoge`すると鍵をForwardingしてくれる。
+```bash
+[.bash_profile]
+alias sshsetup='eval "$(ssh-agent)" && ssh-add PRIVATE_KEY_PATH'
+```
+のようにAliasしておくと便利。パスフレーズがなければ直接`eval ~`を書いておいても良いかも。
+```bash
+$ ssh-agent -k
+```
+すると停止する。
+
 ### Alias
 コマンドをショートカットできるAlias。
 `~/.bashrc`か`~/.bash_profile`に書き込む。  
