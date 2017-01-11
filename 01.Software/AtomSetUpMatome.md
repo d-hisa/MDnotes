@@ -74,6 +74,11 @@ Mac:`hoge `
 ->設定でデフォルトをCRLFに
 - atom-html-preview
 - 同期について
+- git-plus
+	+ gitコマンドをAtomから叩ける
+	+ 使い方
+		* `ctrl + shift h`:でコンソールを開き、使いたいコマンドを一覧から選ぶ
+		* githubアカウントの設定の仕方がよくわからない。
 
 ## 起動が重いとき
 `ctrl + shift + p`でコンソールを開き、`timecop view`するとパッケージごとの所要時間がでるので問題の切り分けに
