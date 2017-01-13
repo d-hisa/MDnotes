@@ -135,3 +135,11 @@ augroup END
 ## Vimでテキストを暗号化する
 暗号化前のテキストを開き、`:X PASSWPRD`として、`:wq`すると暗号化される。  
 暗号化を解除するにはファイルを開いた状態で`:X`とするだけ。
+
+## vimdiff
+```bash
+$ vimdiff FILE1 FILE2
+```
+### command
+- `dp`:右方向へのmerge
+- `do`:左方向へのmerge
