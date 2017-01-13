@@ -5,9 +5,7 @@
 ### Win
 exe落としてダブルクリックで終わり。  
 インストール先の実態は  
-`
-C:\Users\USERNAME\AppData\Local\atom\Update.exe --processStart atom.exe
-`
+`C:\Users\USERNAME\AppData\Local\atom\Update.exe --processStart atom.exe`
 
 ## Basic Settings
 ### 日本語化（今回はしない）
@@ -79,6 +77,7 @@ Mac:`hoge `
 	+ 使い方
 		* `ctrl + shift h`:でコンソールを開き、使いたいコマンドを一覧から選ぶ
 		* githubアカウントの設定の仕方がよくわからない。
+		* なんか既知のバグっぽい？
 
 ## 起動が重いとき
 `ctrl + shift + p`でコンソールを開き、`timecop view`するとパッケージごとの所要時間がでるので問題の切り分けに
