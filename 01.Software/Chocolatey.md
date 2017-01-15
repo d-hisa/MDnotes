@@ -3,14 +3,34 @@
 Win版のyum、homebrew、apt-get的なものらしい。Pwoershellでインストールするみたい。  
 今回は、Alfredライクなランチャを入れるついでに触ってみる。
 ## Installation
-[Chocolateyの公式ページ](https://chocolatey.org/install)へ行き、CMDでコマンドをコピペ実行。  
+### Powershellの準備
+Powershellのスクリプトによって実行されるので、スクリプトの実行を許可しよう。
+```powershell
+[cmd]
+C:\WINDOWS\system32>powershell
+[Powershell]
+PS C:\WINDOWS\system32> Get-ExecutionPolicy
+Restricted
+> Set-ExetutionPolicy RemoteSigned
+> Get-ExecutionPolicy
+RemoteSigned
+```
+スクリプトの実行ポリシーが`RemoteSigned`であればOK。
+### Chocolateyのインストールスクリプトの実行
+[Chocolateyの公式ページ](https://chocolatey.org/install)へ行き、Powershellでコマンドをコピペ実行。
+```Powershell
+[Powershell]
+> iwr https://chocolatey.org/install.ps1 -UseBasicParsing | iex
+```  
 この時、Admin実行しておかないとERRORを吐くので注意。何もなければPATHまで通してくれる。これだけ。
 ## Usage
 - `chocolatey install HOGE_PACKAGE`
 - `choco install HOGE_PACKAGE`
 - `cinst HOGE_PACKAGE`
 
-はすべて同義だとか。あとは`choco list`でインストール可能なパッケージを一覧したり、`choco update all`でパッケージの一括アプデ、`choco install / uninstall`でパッケージの追加/削除が可能。
+はすべて同義だとか。あとは`choco list`でインストール可能なパッケージを一覧したり、~~`choco update all`でパッケージの一括アプデ、~~`choco install / uninstall`でパッケージの追加/削除が可能。
+> NOTICE
+`choco update`はDeprecatedらしい。`choco upgrade`推奨とのこと。
 
 ## Tips
 Chocolateyは管理者権限がないと弾かれるので、ターミナル（今回はCmder）に常に管理者権限を付与する。
