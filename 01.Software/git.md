@@ -1,4 +1,13 @@
 # git
+## Command Usage
+### remote
+- `add`
+	* リモートリポジトリを追加する
+	* usage: `git remote add REPO_NAME REPO_URL`
+- `-v`
+	* リモートリポジトリを一覧する
+	* usage: `git remote -v`
+
 ## .gitignore
 gitに紐付けないファイルを指定する。
 - 無視設定を行いたいフォルダに .gitignore という名前でテキストファイルを作成する。
@@ -7,9 +16,10 @@ gitに紐付けないファイルを指定する。
 - リポジトリのルートにある必要はなく、リポジトリ内に複数あってもよい。
 
 ### .gitignoreを設定する
-- 任意のディレクトリに`.gitignore`ファイルをつくる。
+- 任意のディレクトリに`.gitignore`ファイルをつくる。  
 `$ touch .gitignore`
 - 深い階層の方が優先される。
+
 ### .gitignoreの設定方法
 #### コメント
 "¥#" で始まる行はコメント
