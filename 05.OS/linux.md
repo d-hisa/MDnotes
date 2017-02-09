@@ -75,6 +75,16 @@ export=http_proxy=http://172.20.253.21:8080
 ただしここに書いただけではrootユーザ(`sudo su`)には適用されないもよう。  
 加えて、exportで環境変数的にproxyを通すと、全体がproxyに向くため、内部リポジトリを読みにいけなくなることに注意。
 
+### history
+コマンド履歴を見るコマンド。
+```bash
+$HISTFILE	#historyが残っているディレクトリを示す
+
+[.bash_profile]
+HISTSIZE=50000	#上限を50000件に
+HISTTIMEFORMAT='%Y%m$d_%H:%M:%S'	# コマンド履歴にタイムスタンプ
+```
+
 ## SElinux
 ```bash
 $ getenforce

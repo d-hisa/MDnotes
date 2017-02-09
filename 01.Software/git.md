@@ -8,6 +8,13 @@
 	* リモートリポジトリを一覧する
 	* usage: `git remote -v`
 
+### git rev-parse --show-toplevel
+カレントディレクトリのgitリポジトリルートのパスを出してくれる。
+```bash
+cd $(git rev-parse --show-toplevel)
+```
+などをaliasしておくと便利かも。
+
 ## .gitignore
 gitに紐付けないファイルを指定する。
 - 無視設定を行いたいフォルダに .gitignore という名前でテキストファイルを作成する。
