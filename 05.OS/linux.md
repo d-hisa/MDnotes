@@ -199,3 +199,18 @@ $ echo 'proxy-user = "USER_NAME:PASSWORD"' >> ~/.curlrc
 $ echo 'proxy = "PROXY_HOST:PORT_NUM"' >> ~/.curlrc
 $ source ~/.curlrc
 ```
+
+### find
+```bash
+$ find DIR_PATH [-name NAME]
+```
+#### options
+- `name NAME`：一致検索。ワイルドカード可。
+
+### ln
+リンク付コマンド
+```bash
+ln [options] SOURCE_PATH TARGET_PATH
+```
+#### options
+- `s`:シンボリックリンクを作成
