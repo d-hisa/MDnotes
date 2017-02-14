@@ -186,6 +186,7 @@ $ tail [-n LINE_NUM] [-f] [file_path_1] [file_path_2] ...
 #### options
 - `x`:proxy setting
 - `v`:レスポンスを表示する
+
 #### proxyを設定する
 ##### ラインから設定
 ```bash
