@@ -28,3 +28,12 @@ $ moveTKMKdir hoge.txt
 mv hoge.txt $HOME/m-taka/test/hoge.txt
 ### と同じ動作をする関数を定義できるよ
 ```
+
+# 複数行コメントアウト
+```bash
+<< commentout	# 任意の文字列
+hoge
+foovar
+commentout
+```
+でhogeとfoovarはコメントアウトされる
