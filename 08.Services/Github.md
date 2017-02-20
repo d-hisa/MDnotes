@@ -25,6 +25,22 @@ $ git remote set-url origin NEW_REPOS_URL
 ```
 で書き換え。
 
+### ssh/configに追記
+```bash
+[~/.ssh/config]
+## Git ssh settings
+Host github
+		HostName github.com
+		IdentityFile ~/.ssh/for_git/id_rsa_git #自環境に合わせて
+		User git
+		PreferredAuthentications publickey
+```
+### gitする前に
+```bash
+$ ssh-add ~/.ssh/PRI_KEY_FOR_GIT
+```
+しておくこと。
+
 ## リポジトリへの招待方法
 - ブラウザでログインした状態でリポジトリの画面を開く
 - 右上の＋マークの中から「New Collaborator」をクリック
