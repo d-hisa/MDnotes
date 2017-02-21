@@ -78,6 +78,8 @@ Mac:`hoge `
 		* `ctrl + shift h`:でコンソールを開き、使いたいコマンドを一覧から選ぶ
 		* githubアカウントの設定の仕方がよくわからない。
 		* なんか既知のバグっぽい？
+- markdown-preview-enhanced
+	+ [【ドキュメントが書きたくなる】Markdownライブプレビュー + インライン数式/UML/図表 + 綺麗にPDF/Wordエクスポートまで - Qiita](http://qiita.com/tomo_makes/items/da4e8fe7d8cf168b545f)
 
 ## 起動が重いとき
 `ctrl + shift + p`でコンソールを開き、`timecop view`するとパッケージごとの所要時間がでるので問題の切り分けに
