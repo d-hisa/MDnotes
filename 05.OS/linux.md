@@ -1,4 +1,5 @@
 # Linux Environments and Commands
+[TOC]
 ## Environments
 ### ssh
 #### .ssh/config
@@ -215,3 +216,18 @@ ln [options] SOURCE_PATH TARGET_PATH
 ```
 #### options
 - `s`:シンボリックリンクを作成
+
+### wc
+行数をカウントしてくれる
+```bash
+$ wc -l hoge.foo
+$ wc -l *.md	#一応ワイルドカードも使える
+grep hoge | wc -l	# パイプもできる
+```
+#### options
+- `-l`:行数をカウント
+#### tips
+再帰的にファイルの行数をカウント
+```bash
+$ wc -l $(find . -name "*.md")
+```
