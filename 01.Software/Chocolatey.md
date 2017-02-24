@@ -32,6 +32,18 @@ RemoteSigned
 > NOTICE
 `choco update`はDeprecatedらしい。`choco upgrade`推奨とのこと。
 
+## Commands
+| Commands | Description|
+| :------------- | :------------- |
+|choco list [packageName]|パッケージ検索。引数がなければすべてのパッケージを表示。|
+|choco list -lo [packageName]|インストール済みのパッケージ検索。引数がなければすべてのインストール済みパッケージを表示。|
+|cinst [packageName]|指定パッケージのインストール。|
+|cuninst [packageName]|指定パッケージのアンインストール。|
+|cup|Chocolatey本体のアップデート。|
+|cup [packageName]|指定パッケージのアップデート。|
+|cup all|インストール済みのパッケージを全てアップデート。|
+
+
 ## Tips
 Chocolateyは管理者権限がないと弾かれるので、ターミナル（今回はCmder）に常に管理者権限を付与する。
 - \*.exe本体を右クリック
