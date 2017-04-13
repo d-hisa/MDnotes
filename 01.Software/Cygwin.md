@@ -11,7 +11,7 @@ PuttyもTeratermもいらんとか言われてる。
 	+ `Root`ディレクトリはそのまま(`C:\cygwin64`,の場合はx86`C:\cygwin`)
 	+ `Select Local Package Directory`は`C:\cygwin64\packages`がお勧め  
 	でてくるアラートは`はい`  
-	+ レゾ内で入れる場合は`Use Internet Explorer Proxy Setting`をしないと漏れなく死ぬ
+	+ 社内で入れる場合は`Use Internet Explorer Proxy Setting`をしないと漏れなく死ぬ
 	+ `Choose A Download Site`では日本のjpドメインを選ぶのが吉。  
 	この時点でリストが真っ白ならProxyを確認して合っててもダメなら**あきらめろ**  
 	今回は安心と信頼と実績の`ftp://ftp.jaist.ac.jp`を選択
