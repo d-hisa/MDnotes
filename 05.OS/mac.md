@@ -9,6 +9,20 @@ PS1="\u:\[\033[32m\]\W\[\033[0m\] $"
 詳細は以下参照のこと。
 - [[Mac] ターミナルの$前の出力内容をカスタマイズする - YoheiM .NET](http://www.yoheim.net/blog.php?q=20140309)
 
+## Settings
+### Caps exchange Esc
+- システム環境設定->キーボード->[キーボード]->修飾キー
+- Capsキーをプルダウンで入れ替え
+
+## Finderで不可視ファイル（.ファイル）を表示する
+以下のコマンドを叩く
+```bash
+# default設定を変更
+$ defaults write com.apple.finder AppleShowAllFiles TRUE
+# プロセスを殺してFinderを再起動
+$ killall Finder
+```
+
 ## Homebrew
 ### home brew cask
 homebrewの経由でもっといろいろインストールできるようにするためのもの？らしい
@@ -79,4 +93,7 @@ $ brew prune
 - `cmd + Enter`:Switch full screen
 - `cmd + -`:font size small
 - `cmd + shift + ;`:font size big
--
+
+## Tips
+### 開発元が信頼できないときの開き方
+`control + 開く`で一度開けば今後聞かれない。

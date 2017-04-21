@@ -1,5 +1,10 @@
 # Shellscript and bash
 ## Shellscript
+### 実行をデバッグする
+```bash
+$ /bin/bash -x ./hoge.sh
+```
+のように、`-x`オプションを付けて実行する
 
 ## bash technics
 ### Alias
@@ -28,6 +33,17 @@ $ moveTKMKdir hoge.txt
 mv hoge.txt $HOME/m-taka/test/hoge.txt
 ### と同じ動作をする関数を定義できるよ
 ```
+
+## 特殊変数
+### $0 ~ $9
+- `$0`:プログラム名
+- `$1~$9`:プログラムの引数
+
+### $@ / $*
+引数の個数
+
+### $?
+直前の計算結果の成否を返す。成功なら`0`、失敗なら適当な戻り値を返す。
 
 # 複数行コメントアウト
 ```bash
