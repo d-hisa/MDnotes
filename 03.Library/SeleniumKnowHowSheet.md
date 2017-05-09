@@ -2,7 +2,7 @@
 <b>
 	<font size="7em">Selenium Know How Sheet</font><br>
 	<font size="3em" color="#555555">
-	Last Update: 2016/08/01 , Author: Hisazawa
+	Last Update: 2016/08/01 , Author: d-hisa
 	</font>
 </b>
 </div>
