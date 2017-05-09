@@ -9,6 +9,11 @@ PS1="\u:\[\033[32m\]\W\[\033[0m\] $"
 詳細は以下参照のこと。
 - [[Mac] ターミナルの$前の出力内容をカスタマイズする - YoheiM .NET](http://www.yoheim.net/blog.php?q=20140309)
 
+> **NOTICE**
+こういう便利なWEBページがあった
+[Easy Bash Prompt Generator](http://ezprompt.net/)
+
+
 ## Settings
 ### Caps exchange Esc
 - システム環境設定->キーボード->[キーボード]->修飾キー
