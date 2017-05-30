@@ -2,6 +2,15 @@
 ## Installation
 
 ## Settings
+### 基本設定
+[ファイル]->[基本設定]->[設定] or <kbd>Ctrl + , </kbd>
+```json
+	"editor.tabSize": "4",
+	"editor.insertSpaces": true,
+	"editor.renderIndentGuides": true,
+	"files.autoGuessEncoding": true
+```
+
 ### Use FiraCode
 #### Install font
 ##### Mac
@@ -19,6 +28,10 @@ $ brew cask install font-fira-code
 #### Reference
 [コーディング用フォント「Fira Code」を使おう - Qiita](http://qiita.com/shuntksh/items/1995e87fe5c1ac88296f?utm_source=Qiita%E3%83%8B%E3%83%A5%E3%83%BC%E3%82%B9&utm_campaign=ea92dc4aeb-Qiita_newsletter_243_18_1_2017&utm_medium=email&utm_term=0_e44feaa081-ea92dc4aeb-33166133)
 
+## Packages
+- vscode-icons
+- Japanese Word Handler
+
 ## Usage
 ### Short Cuts
 - Markdown Preview
@@ -26,3 +39,5 @@ $ brew cask install font-fira-code
 - インデント追加
 	+ <kbd>Ctrl + ]</kbd>
 	+ <kbd>Ctrl + [</kbd>
+- オートインデント整形
+	+ <kbd>Shift + Alt + f </kbd>
