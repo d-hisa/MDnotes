@@ -1,4 +1,25 @@
 # git
+## git for windows
+### 改行コード設定
+改行コード設定デフォルトだと改行コードを勝手に変換してくれる設定になっている。
+```bash
+$ git config --global core.autoCRLF false
+```
+として、編集。確認する際は
+```bash
+$ git config -l
+```
+### 日本語のエスケープ問題
+初期設定では日本語のファイル名が`\nnn`の形でアスキーエスケープがかかってしまう。
+```bash
+$ git config --global core.quotepath false
+```
+とすればOK。シェルスクリプトなどでgitの設定がアレコレする場合もあるので、その時は
+```bash
+$ printf "$(git log --name-status)"
+```
+のように`printf`を通すことで対処もできる。
+
 ## Command Usage
 ### remote
 - `add`
@@ -53,6 +74,15 @@ package/**/*.ts
 ### .gitignoreするまえにaddしてしまったら
 ```bash
 $ git rm --cached -f foo.html~
+```
+### 一つ前に戻す
+```bash
+$ git reset HEAD FILE_NAME
+```
+
+### コミットメッセージを直したい
+```bash
+$ git commit --amend
 ```
 
 ### Reference
