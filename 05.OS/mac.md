@@ -38,6 +38,17 @@ mdファイルをクイックルックできるアプリ。
 ```bash
 $ brew cask install qlmarkdown
 ```
+### Exiftool
+exif情報をあれこれするツール
+```bash
+# Install
+$ brew install exiftool
+# exif情報を確認
+$ exiftool FILE_NAME
+# exif情報を削除(ワイルドカードOK)
+$ exiftool all= FILE_NAME
+```
+
 ### Error
 #### brew updateが通らない問題
 `brew update`すると、やたらと`Permission denied`エラーが出る。  
