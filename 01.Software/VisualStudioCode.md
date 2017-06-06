@@ -31,6 +31,8 @@ $ brew cask install font-fira-code
 ## Packages
 - vscode-icons
 - Japanese Word Handler
+- table formatter
+	* `Ctrl + Shift + P`でコンソールを開き、`table`で検索し、`Current~`を選ぶとカーソルがいるところのテーブルをきれいにしてくれる。
 
 ## Usage
 ### Short Cuts
@@ -41,3 +43,8 @@ $ brew cask install font-fira-code
 	+ <kbd>Ctrl + [</kbd>
 - オートインデント整形
 	+ <kbd>Shift + Alt + f </kbd>
+### コマンドラインから起動する
+```bash
+$ code OPEN_DIR_PATH
+```
+で、そのディレクトリをVScodeで開ける

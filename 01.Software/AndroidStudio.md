@@ -47,7 +47,6 @@ sshを使っているgitリポジトリだと、fetchとかに失敗する場合
 - [SSH実行可能ファイル|SSH executable]を[ビルトイン|Built-in|ビルトイン]から[ネイティブ|Native]ネイティブに変更
 - あとは、`.ssh`とかにid_rsaとかで鍵が置いてあれば多分大丈夫。
 
-
 ## 詳細設定
 ## 使い方
 ### 全てのファイルから検索する
@@ -62,3 +61,9 @@ FOO_API_XX
 ...
 $ emulator -avd EMULATOR_NAME -http-proxy YOUR_PROXY:YOUR_PORT
 ```
+
+## Tips
+### Drror fixes
+#### delete_failed_internal_error
+- 証明書が異なる同一パッケージ名のアプリを実機にインストールテストしようとすると出る
+- [Build]->[Clean]する＆実機からアプリを削除しておく。
