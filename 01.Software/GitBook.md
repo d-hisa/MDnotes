@@ -70,10 +70,14 @@ $ vim GITBOOK/book.json
 }
 ```
 ### PDFなどに吐く
+#### Windows編
 - [calibre - E-book management](http://calibre-ebook.com/)を入れる。必須なのかはよくわからない。
 - `npm install -g ebook-convert`
 - `gitbook pdf`とか`gitbook epub`とかで吐き出せる
 	* windowsの場合、cmdを管理者権限で起こしてから叩かないとなんかダメ。
+
+#### Mac編
+- `brew cask install calibre`
 
 ## How to use
 ## Tips
