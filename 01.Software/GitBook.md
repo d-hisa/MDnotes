@@ -14,8 +14,38 @@ node.jsベースのmarkdownをいろいろよしなにしてくれるらしい�
 $ npm install -g gitbook-cli
 $ gitbook --version
 # ↑これを打つと、gitbook本体のインストールが始まる
-$ npm install -g gitbook
 ```
+#### PROXY配下の場合
+プロキシを通す場合、npmに色々設定が必要。  
+色々試しすぎてどれが功を奏したのかわからないので色々貼っておく
+```bash
+# gitでhttpsをgit扱いにする設定
+$ git config --global url."https://".insteadOf git://
+$ git config -l #確認コマンド
+# npmのプロキシ設定
+$ npm config set proxy PROXY_ADD:PORT
+$ npm config set https-proxy PROXY_ADD:PORT
+$ npm config set registry http://registry.npmjs.org/
+$ npm config list
+~
+; globalconfig
+# ここにだいたい入るけど、一応ユーザも設定する
+~
+$ vim ~/.npmrc
+[.npmrc]
+registry="http://registry.npmjs.org/"
+proxy="PROXY_ADD:PORT"
+https-proxy="PROXY_ADD:PORT"
+https-proxy="PROXY_ADD:PORT"
+strict-ssl=false
+[end]
+$ npm config list
+~
+; userconfig
+~
+# ここにも入っていれば多分OK
+```
+
 ## Settings
 ### PlugIns
 ```bash
