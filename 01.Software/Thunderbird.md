@@ -1,12 +1,12 @@
 # Thunderbird
 ## Plugin
-### ����Ă�v���O�C��
+### 入れてるプラグイン
+- ImportExportTools
 
-
-## ���b�Z�[�W�t�B���^
-`�c�[��`->`�t�B���^`�Őݒ�\�ȃt�H���_�U�蕪���B
-### ���ڂ̃t�@�C��
-�ȉ��̃f�B���N�g����`.dat`�`���ő��݂���̂ŁA�e�L�X�g�G�f�B�^�ł������i�Ǝv���j
+## メッセージフィルタ
+`ツール`->`フィルタ`で設定可能なフォルダ振り分け。
+### 直接のファイル
+以下のディレクトリに`.dat`形式で存在するので、テキストエディタでいじれる（と思う）
 ```bash
 /c/Users/hisazawa/AppData/Roaming/Thunderbird/Profiles/kes48hma.default/Mail/pop.nttr.co.jp
 ```

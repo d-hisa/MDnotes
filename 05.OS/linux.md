@@ -248,3 +248,41 @@ $ tree [PATH] [OPTIONS]
 |-L <階層>|表示する階層を指定|
 |-I <ファイル名>|除外ファイル|
 |--help|ヘルプ|
+
+
+### nkf
+文字コード変換系コマンド。
+```bash
+$ nkf [options] FILE_PATH [> OUTPUT_FILE_PATH]
+#ex.)
+$ nkf -g hoge.txt
+UTF-8
+$ nkf -s --overwrite hoge.txt
+$ nkf -g hoge.txt
+Shif-JIS
+```
+#### options
+- `-e`:EUC output
+- `-s`:Shift-JIS output
+- `-w`:UTF-8(without BOM) output
+- `-g`:Code difinition
+- `--overwrite`:overwrite FILE_PATH without OUTPUT_FILE_PATH
+
+### wget
+ファイルダウンロード。
+```bash
+$ wget
+```
+#### proxy settings
+```bash
+# ALL-user
+$ vim /etc/wgetrc
+# one-user
+$ ~/.wgetrc
+[wgetrc/.wgetrc]
+~
+http_proxy=YOUR_PROXY:YOUR_PORT
+https_proxy=YOUR_PROXY:YOUR_PORT
+~
+[end of file]
+```

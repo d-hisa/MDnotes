@@ -54,6 +54,27 @@ $ pacman -S [PACKAGE_NAME]
 ```
 - vim
 - tig
+- tar
+- gcc
+- make
+
+#### nkf
+**prerequrements**  
+gcc, make, wget, tar
+```bash
+# Downloads (must checking latest urls for nkf page)
+$ wget https://osdn.jp/projects/nkf/downloads/64158/nkf-2.1.4.tar.gz
+$ tar zxvf nkf-2.1.4.tar.gz
+$ cd nkf-2.1.4
+$ make
+$ mkdir /usr/local/bin
+$ make install
+```
+[nkf Network Kanji Filter - OSDN](https://ja.osdn.net/projects/nkf/releases/)
+
+### How to pacman
+-S:install
+-Ss:リポジトリでパッケージを検索
 
 
 ### References
