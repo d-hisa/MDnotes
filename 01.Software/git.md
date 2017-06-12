@@ -85,5 +85,12 @@ $ git reset HEAD FILE_NAME
 $ git commit --amend
 ```
 
+## リモートリポジトリから新たなブランチをチェックアウトする
+```bash
+$ git fetch
+$ git branch -a
+$ git checkout -b new_branch origin/new_branch
+```
+
 ### Reference
 - [.gitignore の書き方 - Qiita](http://qiita.com/inabe49/items/16ee3d9d1ce68daa9fff)
