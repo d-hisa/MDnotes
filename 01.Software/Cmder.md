@@ -36,13 +36,11 @@ $ vim /etc/profile
 #### For PATH settings by users ####
 MSYS2_PATH_TYPE="inherit"
 # ↓の前に↑を足す！
-case "${MSYS2_PATH_TYPE:-minimal}" in
-   strict)
+#case "${MSYS2_PATH_TYPE:-minimal}" in
+	strict)
 ~
 [end]
 ```
-
-
 これでWindows側のPATH設定が引き継げる
 atodeyomu
 [Windowsでgccなどを利用できるMSYS2の環境設定など - Qiita](http://qiita.com/chromabox/items/fd07bad3f426101fc4a6)
@@ -75,8 +73,34 @@ $ make install
 ### How to pacman
 -S:install
 -Ss:リポジトリでパッケージを検索
+-Qs:ローカルソフト検索
+-R:パッケージ削除
+-Rs:依存パッケージ共々削除
 
+### tips
+#### tigが動かない
+- `C:/msys64/usr/bin/tig.exe: error while loading shared libraries: msys-readline7.dll: cannot open shared object file: No such file or directory`
+- 上記のようなエラーメッセージが出た場合、`msys/libreadline-devel 7.0.003-1 (development)`パッケージをインストールする。
+- `$ pacman -S  msys/libreadline-devel`
+
+#### tigが文字化けする
+- `Ncurses`というライブラリがマルチバイト文字にうまくないらしい。
+	* enable-widecオプションをつけてmakeしてあげる？
+	```bash
+	$ wget http://ftp.gnu.org/pub/gnu/ncurses/ncurses-6.0.tar.gz
+	$ tar xzvf ncurses-6.0.tar.gz
+	$ cd ncurses-6.0/
+	$ ./configure  --enable-widec
+	```
+- TODO:要検証
 
 ### References
 - [MSYS2 homepage](http://www.msys2.org/)
 - [MSYS2でWindows上にコマンドライン環境を作る - Qiita](http://qiita.com/nana4gonta/items/717a4508fa585a454690)
+
+***
+aaaa
+---
+bbbbb
+___
+cccc
