@@ -85,11 +85,16 @@ $ git reset HEAD FILE_NAME
 $ git commit --amend
 ```
 
-## リモートリポジトリから新たなブランチをチェックアウトする
+### リモートリポジトリから新たなブランチをチェックアウトする
 ```bash
 $ git fetch
 $ git branch -a
 $ git checkout -b new_branch origin/new_branch
+```
+
+### コミット間のファイル差分をみたい
+```bash
+$ git diff --stat --name-only COMMIT_ID_A COMMIT_ID_B
 ```
 
 ### Reference

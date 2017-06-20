@@ -143,3 +143,19 @@ $ vimdiff FILE1 FILE2
 ### command
 - `dp`:右方向へのmerge
 - `do`:左方向へのmerge
+
+## tab
+```bash
+:tabnew | edit /hoge/path
+```
+
+## directory tree
+```bash
+:edit .
+```
+**keybinds**  
+- `enter`: open directory
+- `-`:move parent directory
+- `d`: make directory
+- `D`:file / directory delete
+-`R`: file/directory rename
