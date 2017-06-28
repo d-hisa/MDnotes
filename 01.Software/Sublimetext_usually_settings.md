@@ -23,3 +23,21 @@
 	+ `strikeout`:　コイツを消せば良いらしい
 
 ### Sublimerge
+
+### SublimeLinter3
+#### Installation Summary
+- SublimeLinter3 Install using Pcaakge Contorol
+- Linter Plugin install using Pcaakge Contorol
+- Linter Install using indivisula tools
+
+#### Common
+- <kbd> Ctrl + Shift + P</kbd>
+- type `install` and return
+- type `sublimelinter` and return
+
+#### for Javascript
+- - <kbd> Ctrl + Shift + P</kbd>
+- type `install` and return
+- type `SublimeLinter-jshint` and return
+- `$ npm install -g jshint`
+- Restart sublime text
