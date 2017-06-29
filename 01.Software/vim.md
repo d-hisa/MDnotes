@@ -143,3 +143,13 @@ $ vimdiff FILE1 FILE2
 ### command
 - `dp`:右方向へのmerge
 - `do`:左方向へのmerge
+
+## vmi study
+vimの使い方的なとこ
+### tab
+
+### 矩形選択
+- <kbd>Ctrl + V</kbd> -> [VISUAL BLOCK] mode
+- <kbd>Shift + i</kbd>
+- insert words
+- <kbd>Esc</kbd>

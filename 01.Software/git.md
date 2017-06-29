@@ -92,5 +92,13 @@ $ git branch -a
 $ git checkout -b new_branch origin/new_branch
 ```
 
+## 特定のファイルをあるコミットに戻す
+```bash
+$ git checkout COMMIT_NO FILE_PATH
+# ex.)
+$ git checkout HEAD hoge.txt
+```
+
+
 ### Reference
 - [.gitignore の書き方 - Qiita](http://qiita.com/inabe49/items/16ee3d9d1ce68daa9fff)
