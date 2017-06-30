@@ -113,6 +113,11 @@ endif
 ```bash
 そのうち…
 ```
+
+### dein plugins
+- NERDTree
+
+
 ### Reference
 - [NeoBundle から dein.vim に乗り換えたら爆速だった話 - Qiita](http://qiita.com/delphinus/items/00ff2c0ba972c6e41542)
 - [dein.vimを使ってみる - Qiita](http://qiita.com/yoza/items/2f8bd33a18225754f346)
@@ -144,12 +149,25 @@ $ vimdiff FILE1 FILE2
 - `dp`:右方向へのmerge
 - `do`:左方向へのmerge
 
-## vmi study
+## vim study
 vimの使い方的なとこ
-### tab
-
 ### 矩形選択
 - <kbd>Ctrl + V</kbd> -> [VISUAL BLOCK] mode
 - <kbd>Shift + i</kbd>
 - insert words
 - <kbd>Esc</kbd>
+### tab
+```bash
+:tabnew | edit /hoge/path
+```
+
+### directory tree
+```bash
+:edit .
+```
+**keybinds**  
+- `enter`: open directory
+- `-`:move parent directory
+- `d`: make directory
+- `D`:file / directory delete
+-`R`: file/directory rename

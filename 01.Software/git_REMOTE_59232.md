@@ -62,13 +62,6 @@ $ git checkout -b new_branch origin/new_branch
 $ git diff --stat --name-only COMMIT_ID_A COMMIT_ID_B
 ```
 
-### 特定のファイルをあるコミットに戻す
-```bash
-$ git checkout COMMIT_NO FILE_PATH
-# ex.)
-$ git checkout HEAD hoge.txt
-```
-
 ## .gitignore
 gitに紐付けないファイルを指定する。
 - 無視設定を行いたいフォルダに .gitignore という名前でテキストファイルを作成する。
@@ -121,6 +114,7 @@ gitで使える便利なツールたち
 1. 任意のディレクトリへ
 	+ `$ cd /install/dir/path`
 	+ Cmderなら`/usr/bin`とか
+
 1. Cloneする
 	+ `$ git clone https://github.com/simonwhitaker/gibo.git`
 1. PATHを通す
