@@ -5,10 +5,20 @@
 ### 基本設定
 [ファイル]->[基本設定]->[設定] or <kbd>Ctrl + , </kbd>
 ```json
+	// 1タブのスペース数
 	"editor.tabSize": "4",
+	// TABでスペース挿入
 	"editor.insertSpaces": true,
+	// インデントガイドを描画
 	"editor.renderIndentGuides": true,
-	"files.autoGuessEncoding": true
+	// ファイルエンコードを自動認識
+	"files.autoGuessEncoding": true,
+	// デフォルト改行コードをLFに設定（なぜかうまく動かない）
+	"files.eol": "\n",
+	// 言語に対する関連付け
+	"files.associations": {
+		"*.vmsp": "velocity"
+	}
 ```
 
 ### Use FiraCode
