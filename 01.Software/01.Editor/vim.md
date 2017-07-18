@@ -137,7 +137,7 @@ augroup END
 で`.hoge`ファイルに`foovar`のカラーシンタックスが適用される。らしい。
 ### Vimの各ディレクトリ（.vimrcの場所とか）を確認するTips
 コマンドラインから、`vim -version`とすれば、ディレクトリが現れる（ハズ）
-## Vimでテキストを暗号化する
+### Vimでテキストを暗号化する
 暗号化前のテキストを開き、`:X PASSWPRD`として、`:wq`すると暗号化される。  
 暗号化を解除するにはファイルを開いた状態で`:X`とするだけ。
 
@@ -160,7 +160,6 @@ vimの使い方的なとこ
 ```bash
 :tabnew | edit /hoge/path
 ```
-
 ### directory tree
 ```bash
 :edit .
@@ -170,4 +169,17 @@ vimの使い方的なとこ
 - `-`:move parent directory
 - `d`: make directory
 - `D`:file / directory delete
--`R`: file/directory rename
+- `R`: file/directory rename
+### ハードタブとソフトタブの相互変換
+ハードタブ（<TAB>）とソフトタブ（スペース）が混在すると色々ややこしいので、vimで変換できると便利
+```py
+### `.vimrc`で`tabstop`などが設定されている前提 ###
+## Hardtab -> Softtab
+:set expandtab
+:retab
+## Softta  -> Hardtab
+:set noexpandtab
+:retab!
+## その場でステップ数を設定する場合
+:retab 4
+```
