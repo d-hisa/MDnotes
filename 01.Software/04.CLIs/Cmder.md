@@ -4,6 +4,9 @@
 ## インストール
 
 ## 初期設定
+- Settings
+- Main
+	- Monospace:disable
 
 ## 追加セットアップ　～MSYS2を追加する～
 cmderデフォルトの場合、パッケージ管理などができないので、tig等を使うためにMSYS2のbashを追加する。
@@ -98,9 +101,13 @@ $ make install
 - [MSYS2 homepage](http://www.msys2.org/)
 - [MSYS2でWindows上にコマンドライン環境を作る - Qiita](http://qiita.com/nana4gonta/items/717a4508fa585a454690)
 
-***
-aaaa
----
-bbbbb
-___
-cccc
+## 追加セットアップ～Powerlineの導入～
+### Introduction
+イカした見た目になるらしい。
+### Installation
+- [AmrEldib/cmder-powerline-prompt: Custom prompt for Cmder on Windows](https://github.com/AmrEldib/cmder-powerline-prompt)から、`powerline_prompt.lua`から、をDL
+- `%CMDER_ROOT%/config`へDLしたファイルをコピー
+- [pomutemu/milly: [WIP]](https://github.com/pomutemu/milly)より、`Myrica-MM.ttf`より、をDL
+- DLしたフォントをインストール
+- Settingsにてフォントを設定
+TODO:そのうち入れる
