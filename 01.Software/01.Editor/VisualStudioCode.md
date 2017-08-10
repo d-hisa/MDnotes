@@ -52,7 +52,9 @@ $ brew cask install font-fira-code
 ## Usage
 ### Short Cuts
 - Markdown Preview
-	+ <kbd>Ctrl + Shift + v</kbd>
+	+ Win:<kbd>Ctrl + Shift + v</kbd>
+	+ Mac:<kbd>Cmd + Shift + v</kbd>
+	+ syntaxをmarkdownにしておかないとただのペースト扱いになるので注意。
 - インデント追加
 	+ <kbd>Ctrl + ]</kbd>
 	+ <kbd>Ctrl + [</kbd>

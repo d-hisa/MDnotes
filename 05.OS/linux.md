@@ -1,6 +1,22 @@
 # Linux Environments and Commands
 [TOC]
 ## Environments
+### TimeZoneとLocale
+#### TimeZone
+```bash
+$ timedatectl status
+$ timedatectl list-timezone | grep "jp"
+$ timedatectl set-timezone Asia/Tokyo
+```
+#### Locale
+```bash
+$ localectl status
+$ localectl list-locales | grep "ja"
+$ localectl set-locale LANG=ja_JP.utf8
+$ localectl list-keymap | grep "ja"
+$ localectl set-keymap jp106
+```
+
 ### ssh
 #### .ssh/config
 ```bash

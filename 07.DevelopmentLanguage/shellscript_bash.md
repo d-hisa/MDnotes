@@ -34,6 +34,34 @@ mv hoge.txt $HOME/m-taka/test/hoge.txt
 ### と同じ動作をする関数を定義できるよ
 ```
 
+### 演算子
+#### ;
+```bash
+cmd_A ; cmd_B
+```
+`cmd_A`が終わり次第`cmd_B`が走る
+#### &
+```bash
+cmd_A & cmd_B
+```
+`cmd_A`の終了を待たずに`cmd_B`が走る
+#### &&
+```bash
+cmd_A && cmd_B
+```
+`cmd_A`が正常に終了した（終了時ステータス：0）場合、`cmd_B`が走る
+#### ||
+```bash
+cmd_A || cmd_B
+```
+`cmd_A`が失敗した（終了時ステータス：0以外）場合、`cmd_B`、が走る
+
+### echoを改行しない
+```bash
+echo "hogehoge\c"
+```
+`\c`でエスケープすると良いっぽい。Macの場合は<kbd>Opt + ￥</kbd>
+
 ## 特殊変数
 ### $0 ~ $9
 - `$0`:プログラム名
