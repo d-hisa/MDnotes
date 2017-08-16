@@ -83,6 +83,13 @@ Mac:`hoge `
 
 ## 起動が重いとき
 `ctrl + shift + p`でコンソールを開き、`timecop view`するとパッケージごとの所要時間がでるので問題の切り分けに
+
+## Editor is not respondingが継続する時
+```bash
+$ atom --clear-window-state
+```
+するとよくなるかも。
+
 ## References
 - [1](http://webmem.hatenablog.com/entry/how-to-synchronize-Atom-settings-by-sync-settings)
 - [2](http://qiita.com/T_M/items/0fb0804eb1fd256aac4e)
