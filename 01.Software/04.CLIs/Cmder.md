@@ -11,7 +11,9 @@
 ## 追加セットアップ　～MSYS2を追加する～
 cmderデフォルトの場合、パッケージ管理などができないので、tig等を使うためにMSYS2のbashを追加する。
 ### インストール
-[MSYS2 homepage](http://www.msys2.org/)からインストーラを入手し、ウィザードに従いインストール
+- [MSYS2 homepage](http://www.msys2.org/)からインストーラを入手し、ウィザードに従いインストール
+- Chocoratyでもインストールできるっぽい
+    - `cinst msys2`
 ### Cmderへの設定
 - Cmderを起動
 - `Setting`->`Startup`->`Tasks`で一覧の`＋`を押下
