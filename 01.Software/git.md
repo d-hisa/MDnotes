@@ -20,6 +20,22 @@ $ printf "$(git log --name-status)"
 ```
 のように`printf`を通すことで対処もできる。
 
+## ssh接続で入れるサーバにリモートリポジトリを作る
+```bash
+[local]
+$ ssh your.remote.server
+[remote]
+$ mkdir /path/to/working/dir
+$ cd -
+$ git init --bare
+$ logout
+[local]
+$ git clone ssh://USER_NAME@your.remote.server/path/to/working/dir
+# この作業でemptyリポジトリが出来上がるので、ローカルで適当にコミットしてpushしてみる
+# 他の端末やディレクトリでもCloneしてみて、反映されていればOK
+# --bareで作ったリポジトリは履歴管理のみなので、ファイルの実体はないので注意
+```
+
 ## Command Usage
 ### remote
 - `add`
