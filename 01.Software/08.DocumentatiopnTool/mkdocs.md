@@ -3,6 +3,8 @@
 Python製のドキュメンテータ。  
 PlantUMLが使えそうなので試す。あとおしゃれ。
 
+`../`
+
 ## Prerequirements
 - Python
 - pip

@@ -1,6 +1,6 @@
 # pngquant
 ## Introduction
-PNG‰æ‘œ‚ğˆ³k‚·‚éƒc[ƒ‹
+PNGç”»åƒã‚’åœ§ç¸®ã™ã‚‹ãƒ„ãƒ¼ãƒ«
 
 ## Installation
 ### Mac
