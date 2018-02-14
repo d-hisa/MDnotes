@@ -1,19 +1,21 @@
 # Python環境セットアップ
+
 ## Structure
-### Windows編
-- Anaconda(miniconda)
 
-### Mac編
-- Homebrew + pyenv + Anaconda
-
-### Linux編(CentOS)
-- git + pyenv + Anaconda
+OS      | Components
+:------ | :--------------------------
+Windows | Anaconda(miniconda)
+Mac     | Homebrew + pyenv + Anaconda
+CentOS  | git + pyenv + Anaconda
 
 ## Mac編
+
 ### Prerequirements
+
 - Homebrew
 
 ### pyenv
+
 ```bash
 $ brew install pyenv
 $ ls ~/.bash_profile || touch ~/.bash_profile
@@ -27,6 +29,7 @@ pyenv *.*.*
 ```
 
 ### Anaconda
+
 - 大抵の場合必要になってから入れるのでminicondaでおk
 
 ```bash
@@ -41,16 +44,20 @@ $ echo 'export PATH="$PYENV_ROOT/versions/anaconda*-*.*.*/bin/:$PATH"' >> ~/.bas
 $ conda update conda
 ```
 
-
-
 ## pyenv
+
 ### Installation
+
 ### How to use pyenv
 
 ## Anaconda
+
 ### Installation
+
 ### How to use conda
+
 #### Usage Commands
+
 -
 
 #### Create Virtual Environment
