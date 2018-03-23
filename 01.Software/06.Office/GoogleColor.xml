@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<a:clrScheme xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main" name="GoogleMaterial">
+    <a:dk1><!-- テキスト・背景：濃色1-->
+        <a:srgbClr val="212121"/>
+    </a:dk1>
+    <a:lt1><!-- テキスト・背景：淡色1-->
+        <a:srgbClr val="FAFAFA"/>
+    </a:lt1>
+    <a:dk2><!-- テキスト・背景：濃色2-->
+        <a:srgbClr val="607D8B"/>
+    </a:dk2>
+    <a:lt2><!-- テキスト・背景：淡色1-->
+        <a:srgbClr val="ECEFF1"/>
+    </a:lt2>
+    <a:accent1><!-- アクセント1 赤-->
+        <a:srgbClr val="F44336"/>
+    </a:accent1>
+    <a:accent2><!-- アクセント2 橙-->
+        <a:srgbClr val="FF9800"/>
+    </a:accent2>
+    <a:accent3><!-- アクセント3 黄-->
+        <a:srgbClr val="FFEB3B"/>
+    </a:accent3>
+    <a:accent4><!-- アクセント4 緑-->
+        <a:srgbClr val="4CAF50"/>
+    </a:accent4>
+    <a:accent5><!-- アクセント5 青-->
+        <a:srgbClr val="2196F3"/>
+    </a:accent5>
+    <a:accent6><!-- アクセント6 藍-->
+        <a:srgbClr val="3F51B5"/>
+    </a:accent6>
+    <a:hlink><!-- ハイパーリンク -->
+        <a:srgbClr val="00BCD4"/>
+    </a:hlink>
+    <a:folHlink><!-- 表示済ハイパーリンク -->
+        <a:srgbClr val="673AB7"/>
+    </a:folHlink>
+</a:clrScheme>

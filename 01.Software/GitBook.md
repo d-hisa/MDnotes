@@ -110,6 +110,13 @@ $ vim GITBOOK/book.json
 - `brew cask install calibre`
 
 ## How to use
+基本的な使い方
+```bash
+$ book
+
+```
+
+
 ## Tips
 ## References
 - gitbookのプラグインもろもろ
