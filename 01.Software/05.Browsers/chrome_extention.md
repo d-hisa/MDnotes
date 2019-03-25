@@ -1,14 +1,14 @@
-# ChromeŠg’£‹@”\‚È‚Ç‚Ì‚Ü‚Æ‚ß
-“ü‚ê‚Ä‚é•Ö—˜‚È“z‚ç
-## ‘S”Ê
+# Chromeæ‹¡å¼µæ©Ÿèƒ½ãªã©ã®ã¾ã¨ã‚
+å…¥ã‚Œã¦ã‚‹ä¾¿åˆ©ãªå¥´ã‚‰
+## å…¨èˆ¬
 #### [OneTab]()
 #### [Gestures for Google Chrome]()
-#### [Chrome ƒŠƒ‚[ƒgƒfƒXƒNƒgƒb]()
+#### [Chrome ãƒªãƒ¢ãƒ¼ãƒˆãƒ‡ã‚¹ã‚¯ãƒˆãƒƒ]()
 #### [Copy Url Title to clipboard]()
 #### [Toby](https://chrome.google.com/webstore/detail/toby-manage-your-tabs/hddnkoipeenegfoeaoibdmnaalmgkpip?hl=ja)
-ƒ^ƒuŠÇ—ƒc[ƒ‹B
+ã‚¿ãƒ–ç®¡ç†ãƒ„ãƒ¼ãƒ«ã€‚
 
-## ˜AŒg
+## é€£æº
 ### Wunderlist
 #### [Add to Wunderlist]()
 

@@ -29,6 +29,7 @@ To install Ricty:
 # restart shell
 exec $SHELL -l
 ```
+
 #### iTermの場合
 - <kbd>Cmd</kbd>+<kbd>,</kbd> : Open Preference
     - `Profile`
